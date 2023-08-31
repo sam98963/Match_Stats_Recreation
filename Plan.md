@@ -1,8 +1,8 @@
 ### Session 1 Plan
 - Initialise vite project, clear app.js and app.css files etc. ✅
-- Pull all data from API and diplay in console.
-- Begin with the first "header" component :
-  - League name
+- Pull all data from API and diplay in console.✅
+- Begin with the first "header" component :✅
+  - League name ✅
   - Match, home team and away team.
   - Score full.
   - Last 5 game results for each team
