@@ -28,8 +28,10 @@
 - Session 1 start
 - Session 1 end - 1hr 10 mins
 - Session 2 start
+- Session 2 End
 
 
 
 ### Total time
 1hr 10 mins
+20 min - 1hr 30 total
