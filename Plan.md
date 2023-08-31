@@ -5,7 +5,15 @@
   - League name
   - Match, home team and away team.
   - Score full.
+  - Last 5 game results for each team
 - Render relevent data on page.
+
+### Session 2 Plan
+- Finish header rendering and format a little, install bootstrap.
+- Start on overview:
+  - Goals (minute, player and team)
+  - Yellow Cards (minute, player, team)
+  - Red Cards (minute, player, team)
 
 
 
