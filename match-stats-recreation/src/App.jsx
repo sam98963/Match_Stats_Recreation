@@ -1,5 +1,6 @@
 import './App.css'
 import {useState, useEffect} from "react"
+import Header from './Components/Header'
 function App() {
   const [data, setData] = useState(null)
 
@@ -20,7 +21,8 @@ function App() {
 
   return (
     <>
-       <p>{data.match.description}</p>
+      {data && <p>{data.match.description}</p>}
+      {data &&<Header homeTeam = {data.match.contestant[0].shortName} awayTeam = {data.match.contestant[1].shortName} leagueName = {data.match.meta.competition.name} finalScore = {data.match.liveData.matchDetails.scores.total}/>}
     </>
   )
 }
