@@ -8,16 +8,19 @@ function App() {
   },[])
 
   async function fetchData(){
-    const response = await fetch("https://frontend-tech-test-ashy.vercel.app/api/match")
+    try {const response = await fetch("https://frontend-tech-test-ashy.vercel.app/api/match")
     const jsonData = await response.json()
-    setData(jsonData)
+    setData(jsonData)} 
+    catch(error){
+      console.error("Error fetching data from API", error)
+    }
   }
 
   console.log(data)
 
   return (
     <>
-       
+       <p>{data.match.description}</p>
     </>
   )
 }
