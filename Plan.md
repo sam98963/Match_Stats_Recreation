@@ -29,7 +29,7 @@
 - Session 1 end - 1hr 10 mins
 - Session 2 start
 - Session 2 End
-
+- Session 2 continued, technical issue resolved.
 
 
 ### Total time
