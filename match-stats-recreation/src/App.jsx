@@ -1,4 +1,5 @@
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import {useState, useEffect} from "react"
 import Header from './Components/Header'
 function App() {
@@ -21,8 +22,8 @@ function App() {
 
   return (
     <>
-      {data && <p>{data.match.description}</p>}
-      {data &&<Header homeTeam = {data.match.contestant[0].shortName} awayTeam = {data.match.contestant[1].shortName} leagueName = {data.match.meta.competition.name} finalScore = {data.match.liveData.matchDetails.scores.total}/>}
+      {/* {data && <p className = "text-center">{data.match.description}</p>} */}
+      {data &&<Header homeTeam = {data.match.contestant[0].shortName} awayTeam = {data.match.contestant[1].shortName} leagueName = {data.match.meta.competition.name} finalScore = {data.match.liveData.matchDetails.scores.total} homeForm = {data.match.form.home} awayForm = {data.match.form.away}/>}
     </>
   )
 }
