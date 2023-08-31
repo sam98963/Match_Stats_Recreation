@@ -1,16 +1,13 @@
 import PropTypes from "prop-types"
-import FormCircle from '../'
+import FormCircle from './FormCircle'
 export default function Header({homeTeam, awayTeam, leagueName, finalScore, homeForm, awayForm}){
   console.log(homeTeam, awayTeam, leagueName, finalScore, homeForm, awayForm);
   return(<>
       <div className="d-flex flex-row justify-content-around">
         <div>
           <h4>{homeTeam}</h4>
-          {homeForm.map(item=>{
-            if(item === "L"){
-              return <>
-            }
-          })}
+          {homeForm && homeForm.map((item, index) => <FormCircle key={index} result={item}/>
+          )}
         </div>
         <div>
           <h4>{awayTeam}</h4>
