@@ -31,8 +31,9 @@
 - Session 2 start
 - Session 2 End
 - Session 2 continued, technical issue resolved.
-
+- Session 2 End properly.
 
 ### Total time
 1hr 10 mins
 20 min - 1hr 30 total
+1 hr - 2hr 30 total
