@@ -18,3 +18,9 @@
 
 ### Session start/end
 - Session 1 start
+- Session 1 end - 1hr 10 mins
+
+
+
+### Total time
+1hr 10 mins
