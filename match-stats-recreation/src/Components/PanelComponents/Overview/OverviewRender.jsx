@@ -5,7 +5,6 @@ export default function OverviewRender({data}){
   const yellowCards = data.cards.filter((item) => item.type === "YC");
   const redCards = data.cards.filter((item) => item.type === "Y2C" || item.type === "RC");
 
-    console.log("This is goals", data.cards)
   return(
   <div>
     <div >⚽️</div>
