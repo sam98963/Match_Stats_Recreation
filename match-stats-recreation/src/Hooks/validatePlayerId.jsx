@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-export default function useValueById(contestantId, data){
+export default function useValueById(id, data){
   const [matchedValue,setMatchedValue] = useState(null)
 
   useEffect(()=>{
-    const matchedObject = data.match.contestant.find(item=> item.id === contestantId)
-
+    const matchedfirstEleven = data.match.liveData.find(item=> item.id === contestantId)
+    const matchedSub = data.match.liveData.find(item=> item.id === contestantId)
     if(matchedObject) {
       setMatchedValue(matchedObject.position)
     } else {
