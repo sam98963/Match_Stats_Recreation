@@ -50,6 +50,7 @@
 - Session 3 end.
 - Session 4 start.
 - Session 4 end.
+- Session 5 start.
 
 ### Total time
 1hr 10 mins
