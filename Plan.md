@@ -32,6 +32,7 @@
 - Session 2 End
 - Session 2 continued, technical issue resolved.
 - Session 2 End properly.
+- Session 3 start
 
 ### Total time
 1hr 10 mins
