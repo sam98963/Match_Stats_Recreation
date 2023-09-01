@@ -41,6 +41,7 @@
 - Session 2 End properly.
 - Session 3 start
 - Session 3 end.
+- Session 4 start.
 
 ### Total time
 1hr 10 mins
