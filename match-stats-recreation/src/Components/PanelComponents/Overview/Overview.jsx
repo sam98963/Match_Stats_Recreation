@@ -3,7 +3,6 @@ import validateHomeAway from "../../../Hooks/validateHomeAway"
 import OverviewRender from "./OverviewRender"
 export default function Overview({panelData}){
 
-  console.log("this is panel", panelData)
 
   const goals = panelData.match.liveData.goal
   const cards = panelData.match.liveData.card
@@ -28,7 +27,6 @@ export default function Overview({panelData}){
   })}
 
 
-  overviewData && console.log(overviewData);
 
  validateHomeAway(panelData.match.liveData.goal[0].contestantId ,panelData)
 

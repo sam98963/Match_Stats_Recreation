@@ -21,10 +21,8 @@ function App() {
 
   function handlePanelSelection(newPanel){
     setPanelSelected(newPanel)
-    console.log(newPanel)
   }
 
-  console.log(data)
 
   return (
     <>

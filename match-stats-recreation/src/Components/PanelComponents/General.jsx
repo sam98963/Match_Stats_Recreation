@@ -1,5 +1,7 @@
 import { useState } from "react"
 import PropTypes from "prop-types"
+import GeneralAway from "./GeneralHomeAway/GeneralAway"
+import GeneralHome from "./GeneralHomeAway/GeneralHome"
 export default function General({panelData}){
   const [selectedTime, setSelectedTime] = useState("value")
   const awayStats = panelData.match.liveData.lineups.away.stats
@@ -10,12 +12,12 @@ export default function General({panelData}){
   const homeObject = {}
 
   awayStats.forEach(item => {
-    const { type, ...rest } = item; // Extract the type and other properties
-    awayObject[type] = rest; // Assign the type as the key in the object
+    const { type, ...rest } = item;
+    awayObject[type] = rest;
   });
   homeStats.forEach(item => {
-    const { type, ...rest } = item; // Extract the type and other properties
-    homeObject[type] = rest; // Assign the type as the key in the object
+    const { type, ...rest } = item; 
+    homeObject[type] = rest;
   });
 
 
@@ -36,10 +38,8 @@ export default function General({panelData}){
 
   function handleSelectedTime(value){
     setSelectedTime(value)
-    console.log(selectedTime)
   }
 
-  console.log("LOOK HERE", selectedAwayTimeValues, selectedHomeTimeValues)
   return(
     <>
       <h1>General</h1>
@@ -48,6 +48,10 @@ export default function General({panelData}){
         <div onClick={()=>handleSelectedTime("fh")}>First Half</div>
         <div onClick={()=>handleSelectedTime("sh")}>Second Half</div>
       </div>
+      <div>
+      <GeneralHome data={selectedHomeTimeValues}/>
+      <GeneralAway data={selectedHomeTimeValues}/>
+    </div>
     </>
   )
 }
