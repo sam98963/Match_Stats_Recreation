@@ -27,7 +27,7 @@
 
 - Delete player search hook ✅
 - Render overview data - goals, yellow cards, red cards ✅
-- Make hook for calculating percentage for the progress bars in the General section. ✅
+- Make hook for calculating percentage for the progress bars in the General section. 
 
 
 
