@@ -32,11 +32,12 @@ export default function Overview({panelData}){
 
  validateHomeAway(panelData.match.liveData.goal[0].contestantId ,panelData)
 
-  return(
-    <>
-      {overviewData.map((item, index)=><OverviewRender key={index} data={item}/>)}
-      <h1>Overview</h1>
-    </>
+  return(<div className="w-100 h-50">
+      <h1 className="text-center">Overview</h1>
+      <div className="w-100 h-50 d-flex flex-row justify-content-between">
+        {overviewData.map((item, index)=><OverviewRender key={index} data={item}/>)}
+      </div>
+    </div>
   )
 }
 

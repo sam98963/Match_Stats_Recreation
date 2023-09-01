@@ -7,8 +7,9 @@ export default function OverviewRender({data}){
 
     console.log("This is goals", data.cards)
   return(
-  <>
-    <div>
+  <div>
+    <div >⚽️</div>
+    <div className="d-flex row mb-5">
       {data? data.goals.map((item, index)=>(
         item.scorerName? 
         <div key = {index}>
@@ -16,6 +17,7 @@ export default function OverviewRender({data}){
         </div> : <p key = {index}>Anon</p>
       )): null}
     </div>
+    <div>🟨</div>
     <div>
       {yellowCards? yellowCards.map((item, index)=>(
         item.playerName? 
@@ -24,6 +26,7 @@ export default function OverviewRender({data}){
         </div> : <p key = {index}>({item.timeMin}&rsquo;) Anon {item.type}</p>
       )): null}
     </div>
+    <div>🟥</div>
     <div>
       {redCards? redCards.map((item, index)=>(
         item.playerName? 
@@ -32,7 +35,7 @@ export default function OverviewRender({data}){
         </div> : <p key = {index}>({item.timeMin}&rsquo;) Anon {item.type}</p>
       )): null}
     </div>
-  </>
+  </div>
   )
 }
 
