@@ -51,6 +51,8 @@
 - Session 4 start.
 - Session 4 end.
 - Session 5 start.
+- Session 5 end.
+
 
 ### Total time
 1hr 10 mins
@@ -58,3 +60,4 @@
 1 hr - 2hr 30 total
 1 hr 15 min - 3hr 45 total
 45 mins - 4hr 30 total
+50 mins - 5hr 5min total.
