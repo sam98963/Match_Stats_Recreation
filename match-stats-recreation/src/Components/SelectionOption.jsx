@@ -1,15 +1,11 @@
 import PropTypes from "prop-types"
-export default function SelectionOption({option, setPanelSelected}){
+export default function SelectionOption({option, handlePanelSelection}){
 
-function handleSelectionClick(){
-  setPanelSelected(option)
-}
-
-  return(<div className="text-center" style={{width:"20%"}} onClick={handleSelectionClick}>
+  return(<div className="text-center" style={{width:"20%"}} onClick={()=>handlePanelSelection(option)}>
     <p>{option}</p>
   </div>)
 }
 
 SelectionOption.propTypes = {
-  option: PropTypes.string.isRequired, setPanelSelected: PropTypes.func.isRequired
+  option: PropTypes.string.isRequired, handlePanelSelection: PropTypes.func.isRequired
 };

@@ -1,16 +1,35 @@
 import PropTypes from "prop-types"
 import SelectionOption from "./SelectionOption"
-export default function DetailSelectionPanel({homeAbb, awayAbb, setPanelSelected}){
+import Overview from "./PanelComponents/Overview"
+import General from "./PanelComponents/General"
+import Home from "./PanelComponents/Home"
+import Away from "./PanelComponents/Away"
+import Player from "./PanelComponents/Player"
+export default function DetailSelectionPanel({homeAbb, awayAbb, handlePanelSelection, panelSelected}){
   let option = ["Overview", "General", homeAbb, awayAbb, "Player"]
 
+  const panelComponents = {
+    Overview,
+    General,
+    [homeAbb]: Home,
+    [awayAbb]: Away,
+    Player
+  }
 
 
-  return(<div className="d-flex flex-row" style={{width:"100vw", height:"30vh"}}>
-   {homeAbb && awayAbb && option.map((item, index)=><SelectionOption key={index} option={item} setPanelSelected={setPanelSelected}/>)}
+  let SelectedComponent = panelComponents[panelSelected]
+  return(
+  <div>
+    <div className="d-flex flex-row" style={{width:"100vw", height:"30vh"}}>
+    {homeAbb && awayAbb && option.map((item, index)=><SelectionOption key={index} option={item} handlePanelSelection={handlePanelSelection}/>)}
+    </div>
+    <div>
+      <SelectedComponent />
+    </div>
   </div>)
 }
 
 
 DetailSelectionPanel.propTypes = {
-  homeAbb: PropTypes.string.isRequired, awayAbb: PropTypes.string.isRequired, setPanelSelected: PropTypes.func.isRequired
+  homeAbb: PropTypes.string.isRequired, awayAbb: PropTypes.string.isRequired, handlePanelSelection: PropTypes.func.isRequired, panelSelected: PropTypes.string.isRequired
 };
