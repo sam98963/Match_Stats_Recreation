@@ -20,7 +20,14 @@
 - Build components for the panel options✅
 - Re-consider where props will be stored for panel selection✅
 - Render panel conditionally based on selection.✅
-- Finish rendering goals, cards and red cards in overview and start with progress bars in General Panel.
+- Finish rendering goals, cards and red cards in overview and start with progress bars in General Panel.✅
+
+
+### Session 4 Plan
+
+- Delete player search hook ✅
+- Render overview data - goals, yellow cards, red cards ✅
+- Make hook for calculating percentage for the progress bars in the General section. ✅
 
 
 
@@ -42,9 +49,11 @@
 - Session 3 start
 - Session 3 end.
 - Session 4 start.
+- Session 4 end.
 
 ### Total time
 1hr 10 mins
 20 min - 1hr 30 total
 1 hr - 2hr 30 total
 1 hr 15 min - 3hr 45 total
+45 mins - 4hr 30 total
