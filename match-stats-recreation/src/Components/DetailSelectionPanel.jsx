@@ -1,11 +1,11 @@
 import PropTypes from "prop-types"
 import SelectionOption from "./SelectionOption"
-import Overview from "./PanelComponents/Overview"
+import Overview from "./PanelComponents/Overview/Overview"
 import General from "./PanelComponents/General"
 import Home from "./PanelComponents/Home"
 import Away from "./PanelComponents/Away"
 import Player from "./PanelComponents/Player"
-export default function DetailSelectionPanel({homeAbb, awayAbb, handlePanelSelection, panelSelected}){
+export default function DetailSelectionPanel({homeAbb, awayAbb, handlePanelSelection, panelSelected, panelData}){
   let option = ["Overview", "General", homeAbb, awayAbb, "Player"]
 
   const panelComponents = {
@@ -24,12 +24,12 @@ export default function DetailSelectionPanel({homeAbb, awayAbb, handlePanelSelec
     {homeAbb && awayAbb && option.map((item, index)=><SelectionOption key={index} option={item} handlePanelSelection={handlePanelSelection}/>)}
     </div>
     <div>
-      <SelectedComponent />
+      <SelectedComponent panelData = {panelData}/>
     </div>
   </div>)
 }
 
 
 DetailSelectionPanel.propTypes = {
-  homeAbb: PropTypes.string.isRequired, awayAbb: PropTypes.string.isRequired, handlePanelSelection: PropTypes.func.isRequired, panelSelected: PropTypes.string.isRequired
+  homeAbb: PropTypes.string.isRequired, awayAbb: PropTypes.string.isRequired, handlePanelSelection: PropTypes.func.isRequired, panelSelected: PropTypes.string.isRequired, panelData: PropTypes.object.isRequired
 };

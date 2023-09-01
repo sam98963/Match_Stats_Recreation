@@ -14,11 +14,11 @@
   - Goals (minute, player and team) - use the contestant id to test home or away
   - Yellow Cards (minute, player, team)
   - Red Cards (minute, player, team)
-- Selection panel for each section to be shown
+- Selection panel for each section to be shown✅
 
 ### Session 3 Plan
-- Build components for the panel options
-- Re-consider where props will be stored for panel selection
+- Build components for the panel options✅
+- Re-consider where props will be stored for panel selection✅
 - Render panel conditionally based on selection.
 - Finish rendering goals, cards and red cards in overview and start with progress bars in General Panel.
 

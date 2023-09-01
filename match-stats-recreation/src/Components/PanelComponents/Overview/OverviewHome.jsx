@@ -1,4 +1,4 @@
-export default function Overview(){
+export default function OverviewHome(){
   return(
     <>
       <h1>Overview</h1>

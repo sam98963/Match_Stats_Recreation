@@ -30,7 +30,7 @@ function App() {
     <>
       {/* {data && <p className = "text-center">{data.match.description}</p>} */}
       {data &&<Header homeTeam = {data.match.contestant[0].shortName} awayTeam = {data.match.contestant[1].shortName} leagueName = {data.match.meta.competition.name} finalScore = {data.match.liveData.matchDetails.scores.total} homeForm = {data.match.form.home} awayForm = {data.match.form.away}/>}
-      {data && <DetailSelectionPanel homeAbb = {data.match.contestant[0].code} awayAbb = {data.match.contestant[1].code} panelSelected={panelSelected} handlePanelSelection={handlePanelSelection}/>}
+      {data && <DetailSelectionPanel homeAbb = {data.match.contestant[0].code} awayAbb = {data.match.contestant[1].code} panelSelected={panelSelected} handlePanelSelection={handlePanelSelection} panelData = {data}/>}
     </>
   )
 }
